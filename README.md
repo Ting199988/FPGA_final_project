@@ -23,6 +23,7 @@ Input/Output unit:<br>
   功能說明<br>
   移動紫色燈的位置，選定位置後看顏色判斷周圍炸彈數量，踩到炸彈就輸了。<br>
   
+  Code 說明:<br>
   ```verilog
   module final_project(output bit[7:0] DATA_R, DATA_G, DATA_B//控制亮燈,output reg[3:0]COMM,input CLK,input [1:0]buttomx, buttomy//控制移動,input choose//選定格數, clear//重置);```
   
