@@ -182,7 +182,7 @@ Input/Output unit:<br>
 			step_B <= tmp_B[x][y];
 			end
       //以此類推
-			end```
+			end
   
   
    Demo vedio:<br>
