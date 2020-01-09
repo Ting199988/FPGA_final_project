@@ -25,9 +25,10 @@ Input/Output unit:<br>
   
   Code 說明:<br>
   ```verilog
-  module final_project(output bit[7:0] DATA_R, DATA_G, DATA_B//控制亮燈,output reg[3:0]COMM,input CLK,input [1:0]buttomx, buttomy//控制移動,input choose//選定格數, clear//重置);```
+  module final_project(output bit[7:0] DATA_R, DATA_G, DATA_B//控制亮燈,output reg[3:0]COMM,input CLK,input [1:0]buttomx, buttomy//控制移動,input choose//選定格數, clear//重置);
+  ```
   
-	```verilog
+```verilog
   initial//初始化，clear也是這樣
 		begin
 		tmp_R [7:0]=
@@ -61,7 +62,8 @@ Input/Output unit:<br>
 		8'b00000000
 		};
 			COMM = 4'b1000;
-		end```
+		end
+```
     
     ```verilog
     always @(posedge CLK_div)//因為刷很快，所以產生視覺暫留
@@ -93,7 +95,8 @@ Input/Output unit:<br>
 	8'b11111111,
 	8'b11111111,
 	8'b11111111
-	};```
+	};
+	```
   
   ```verilog
 	//x move
@@ -121,7 +124,8 @@ Input/Output unit:<br>
 				step_B <= tmp_B[x][y];
 				tmp_R[x][y] <= 1'b0;//紫色
 				tmp_G[x][y] <= 1'b1;
-				tmp_B[x][y] <= 1'b0;//以下移動以此類推```
+				tmp_B[x][y] <= 1'b0;//以下移動以此類推
+	```
         
         ```verilog
         if(choose == 1'b1)//按了選擇鍵
@@ -149,7 +153,8 @@ Input/Output unit:<br>
 			step_R <= tmp_R[x][y];
 			step_G <= tmp_G[x][y];
 			step_B <= tmp_B[x][y];
-			end```
+			end
+```
       
       ```verilog
       if(choose)//計算周圍8個位置的炸彈量
@@ -172,7 +177,8 @@ Input/Output unit:<br>
 			if(bomb[x][y + 1]==1'b0)
 			count = count + 1;
 			if(bomb[x + 1][y + 1]==1'b0)
-			count = count + 1;```
+			count = count + 1;
+			```
       
       ```verilog
       //warning
@@ -187,6 +193,8 @@ Input/Output unit:<br>
 			end
       //以此類推
 			end
-  
+			```
+
+腳位  
   
    
