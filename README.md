@@ -17,6 +17,9 @@ Input/Output unit:<br>
   下圖為踩到炸彈拜畫面。<br>
   [圖五](https://drive.google.com/open?id=1Lck5RzZnnmG67P3aYiEbWNggRDlYmHxn)<br>
   
+  Demo vedio:<br>
+  [vedio](https://drive.google.com/open?id=1_r85SSGSGtsg-7bUyEJmkEdyQVvX4paM)<br>
+  
   功能說明<br>
   移動紫色燈的位置，選定位置後看顏色判斷周圍炸彈數量，踩到炸彈就輸了。<br>
   
@@ -185,5 +188,4 @@ Input/Output unit:<br>
 			end
   
   
-   Demo vedio:<br>
-  [vedio](https://drive.google.com/open?id=1_r85SSGSGtsg-7bUyEJmkEdyQVvX4paM)<br>
+   
