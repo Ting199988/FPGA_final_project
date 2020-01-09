@@ -195,6 +195,11 @@ Input/Output unit:<br>
 			end
 			```
 
-腳位  
-  
+腳位說明
+output bit[7:0] DATA_R, DATA_G, DATA_B//控制亮燈 --> 接到 8 X 8 LED矩陣
+output reg[3:0]COMM --> 接到
+input CLK --> PIN_22
+input [1:0]buttomx, buttomy//控制移動 --> 接到 4-bit SW
+input choose//選定格數 --> 8 DIPSW 第4鍵
+clear//重置 --> 8 DIPSW 第1鍵
    
