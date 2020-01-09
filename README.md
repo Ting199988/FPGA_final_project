@@ -65,7 +65,7 @@ Input/Output unit:<br>
 		end
 ```
     
-    ```verilog
+```verilog
     always @(posedge CLK_div)//因為刷很快，所以產生視覺暫留
 	begin 
 		if (cnt>=7)
@@ -96,9 +96,9 @@ Input/Output unit:<br>
 	8'b11111111,
 	8'b11111111
 	};
-	```
+```
   
-  ```verilog
+```verilog
 	//x move
 		 if (buttomx == 2'b01)//right
 		  begin
@@ -125,9 +125,9 @@ Input/Output unit:<br>
 				tmp_R[x][y] <= 1'b0;//紫色
 				tmp_G[x][y] <= 1'b1;
 				tmp_B[x][y] <= 1'b0;//以下移動以此類推
-	```
+```
         
-        ```verilog
+```verilog
         if(choose == 1'b1)//按了選擇鍵
 		  begin
 			if(bomb[x][y] == 1'b0)//而且是炸彈
@@ -156,7 +156,7 @@ Input/Output unit:<br>
 			end
 ```
       
-      ```verilog
+```verilog
       if(choose)//計算周圍8個位置的炸彈量
 		begin
 		count = 0;
@@ -178,9 +178,9 @@ Input/Output unit:<br>
 			count = count + 1;
 			if(bomb[x + 1][y + 1]==1'b0)
 			count = count + 1;
-			```
+```
       
-      ```verilog
+```verilog
       //warning
 			if(count == 1)//周圍1顆
 			begin
@@ -193,7 +193,7 @@ Input/Output unit:<br>
 			end
       //以此類推
 			end
-			```
+```
 
 腳位說明
 output bit[7:0] DATA_R, DATA_G, DATA_B//控制亮燈 --> 接到 8 X 8 LED矩陣
