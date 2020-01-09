@@ -17,10 +17,7 @@ Input/Output unit:<br>
   下圖為踩到炸彈拜畫面。<br>
   [圖五](https://drive.google.com/open?id=1Lck5RzZnnmG67P3aYiEbWNggRDlYmHxn)<br>
   
-  Demo vedio:<br>
-  [vedio](https://drive.google.com/open?id=1_r85SSGSGtsg-7bUyEJmkEdyQVvX4paM)<br>
-  
-  功能說明<br>
+  功能說明:<br>
   移動紫色燈的位置，選定位置後看顏色判斷周圍炸彈數量，踩到炸彈就輸了。<br>
   
   Code 說明:<br>
@@ -203,3 +200,5 @@ input [1:0]buttomx, buttomy//控制移動 --> 接到 4-bit SW<br>
 input choose//選定格數 --> 8 DIPSW 第4鍵<br>
 clear//重置 --> 8 DIPSW 第1鍵<br>
    
+Demo vedio:<br>
+[vedio](https://drive.google.com/open?id=1_r85SSGSGtsg-7bUyEJmkEdyQVvX4paM)<br>
